@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+	<!-- Scripts -->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/menu_toggle.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<title>Elephanto - Hollywood's Favorite Pizzeria</title>
+</head>
+<body >
+    
+	<i class="fa fa-bars toggle_menu"></i>
+	<div class="image"></div>
+  
+	<div class="sidebar_menu">
+		<i class="fa fa-times"></i>
+		<center>
+			<a href="Home.aspx"><h1 class="boxed_item"> <centre><span class="logo_bold">ELEPHANTO</span></centre></h1>
+			</a><h2 class="logo_title">Hollywoo's Favorite Pizzeria</h2>
+		</center>
+
+		<ul class="navigation_section">
+			<li class="navigation_item" id="profile">
+				BILLING
+			</li>
+			<li class="navigation_item" id="education">
+				INVENTORY
+			</li>
+			<li class="navigation_item" id="work_experience" >
+				PURCHASE ORDERS
+			</li>
+			<li class="navigation_item" id="skills" >
+				<a href="Default2.aspx" class="redirect_item">CONTACT US </a> 
+              
+			</li>
+
+			<br><br>
+		</ul>
+
+		<center>
+			<a href="AdminLogin.aspx"><h1 class="boxed_item boxed_item_smaller signup">
+			<i class="fa fa-user"></i>
+				ADMIN LOGIN
+			</h1></a>
+		</center>
+	</div><!-- End of sidebar -->
+	<div class="heading">
+	WELCOME TO ELEPHANTO!
+	</div>
+	<script src="js/close_menu.js"></script>
+
+    <p>
+      <asp:ContentPlaceHolder ID="Main" runat="server" ></asp:ContentPlaceHolder>
+    </p>
+	<footer>
+		<div class="wrapper"> Elephanto </div>
+	</footer>
+
+</body>
+</html>
